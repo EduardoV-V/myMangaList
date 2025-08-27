@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaPencilAlt, FaCheck } from 'react-icons/fa';
-import { HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { db } from "./firebase";
 import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
 import CollectionForm from "./form";
