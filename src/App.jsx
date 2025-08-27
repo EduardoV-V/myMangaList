@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaPencilAlt, FaCheck } from 'react-icons/fa';
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, link } from "react-router-dom";
 import { db } from "./firebase";
 import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
 import CollectionForm from "./form";
@@ -148,12 +148,12 @@ function Homepage() {
           <p className="text-gray-400 mb-6">Loucura</p>
           
           <div className="flex gap-4 mb-6">
-            <a
-              href="/add-collection"
-              className="bg-blue-600 hover:bg-blue-700 text-white! font-bold! px-6 py-3 rounded-lg text-lg transition-colors shadow-lg"
+            <Link
+              to="/add-collection"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-lg text-lg transition-colors shadow-lg"
             >
               Adicionar Coleção
-            </a>
+            </Link>
           </div>
           <div className='flex gap-2 mb-6'>
             <p
