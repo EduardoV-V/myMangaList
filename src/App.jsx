@@ -277,7 +277,7 @@ function Homepage() {
             onDragEnd={handleDragEnd}
           >
             <SortableContext items={mangaCollections} strategy={verticalListSortingStrategy}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full max-w-7xl">
+              <div className="grid grid-cols-2 min-[500px]:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 w-full max-w-7xl">
                 {mangaCollections.map((col) => (
                   <SortableCollection
                     key={col.id}
@@ -289,11 +289,11 @@ function Homepage() {
             </SortableContext>
           </DndContext>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 w-full max-w-7xl">
+          <div className="grid grid-cols-2 min-[500px]:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 w-full max-w-7xl">
             {mangaCollections.map((col) => (
               <div
                 key={col.id}
-                className="bg-gray-800 shadow-lg rounded-xl p-4 cursor-pointer hover:scale-105 transition-transform duration-300 group relative border border-gray-700"
+                className="bg-gray-800 shadow-lg rounded-xl p-3 cursor-pointer hover:scale-105 transition-transform duration-300 group relative border border-gray-700"
                 onClick={() => setSelectedCollection(col)}
               >
                 <img
@@ -302,17 +302,19 @@ function Homepage() {
                   className="rounded-lg mx-auto object-cover shadow-md"
                   style={{ width: "150px", height: "225px" }}
                 />
-                <h2 className="text-center font-bold mt-3 text-gray-100">{col.title}</h2>
-                <p className="text-center text-sm text-gray-400 mt-1">
+                <h2 className="text-center font-bold mt-3 text-gray-100">
+                  {col.title}
+                </h2>
+                <p className="text-center text-xs text-gray-400 mt-1">
                   {col.type === 'single' ? 'Volume Único' : `${col.volumes.filter(v => v.owned).length}/${col.volumes.length} volumes`}
                 </p>
                 
                 <Link
                   to={`/edit-collection/${col.id}`}
-                  className="absolute top-3 right-3 bg-gray-900 bg-opacity-80 text-gray-100 p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
+                  className="absolute top-2 right-2 bg-gray-900 bg-opacity-80 text-gray-100 p-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>
                 </Link>
@@ -321,7 +323,7 @@ function Homepage() {
           </div>
         )}
       </div>
-            {selectedCollection && (
+        {selectedCollection && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-800 rounded-xl p-6 w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col border border-gray-700 shadow-2xl">
             <div className="flex justify-between items-center border-b border-gray-700 pb-4 mb-4">
