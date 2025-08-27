@@ -1,82 +1,22 @@
 import { useEffect, useState } from "react";
-import { FaArrowDown, FaArrowUp, FaPencilAlt, FaCheck } from "react-icons/fa";
-import { HashRouter, Routes, Route, Link } from "react-router-dom";
+import { FaPencilAlt, FaCheck } from 'react-icons/fa';
+import { HashRouter, Routes, Route, Link } from "react-router-dom"; // Corrigido: Link com L maiúsculo
 import { db } from "./firebase";
-import { 
-  collection, 
-  getDocs, 
-  doc, 
-  updateDoc, 
-  writeBatch 
-} from "firebase/firestore";
+import { collection, getDocs, doc, updateDoc } from "firebase/firestore";
 import CollectionForm from "./form";
-import {
-  DndContext,
-  closestCenter,
-  KeyboardSensor,
-  PointerSensor,
-  useSensor,
-  useSensors,
-} from "@dnd-kit/core";
-import {
-  arrayMove as sortableArrayMove,
-  SortableContext,
-  sortableKeyboardCoordinates,
-  useSortable,
-  verticalListSortingStrategy,
-} from "@dnd-kit/sortable";
-import { CSS } from "@dnd-kit/utilities";
-
-function SortSelector({ sortOrder, setSortOrder, isEditingOrder, setIsEditingOrder, onSaveOrder, orderAsc, setOrderAsc }) {
-  const toggleMode = () => {
-    if (sortOrder === "alphabetical") {
-      setSortOrder("custom");
-      setIsEditingOrder(false);
-    } else {
-      setSortOrder("alphabetical");
-      setIsEditingOrder(false);
-    }
-  };
-
-  const toggleAction = () => {
-    if (sortOrder === "alphabetical") {
-      setOrderAsc(!orderAsc);
-    } else {
-      if (isEditingOrder) {
-        onSaveOrder();
-      }
-      setIsEditingOrder(!isEditingOrder);
-    }
-  };
-
-  return (
-    <div className="flex items-center gap-2 mb-6 w-full max-w-7xl mx-auto px-4">
-      <button
-        className="text-lg font-medium text-white! font-bold! hover:text-blue-400! transition! bg-transparent! border-0! p-0!"
-        onClick={toggleMode}
-      >
-        {sortOrder === "alphabetical" ? "Nome" : "Personalizada"}
-      </button>
-
-      <button
-        className="text-white hover:text-blue-400! transition! bg-transparent! border-0! p-0!"
-        onClick={toggleAction}
-      >
-        {sortOrder === "alphabetical" ? (
-          orderAsc ? <FaArrowDown /> : <FaArrowUp />
-        ) : isEditingOrder ? (
-          <FaCheck />
-        ) : (
-          <FaPencilAlt />
-        )}
-      </button>
-    </div>
-  );
-}
+import { DndContext, closestCenter, KeyboardSensor, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
+import { arrayMove as sortableArrayMove, SortableContext, sortableKeyboardCoordinates, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 
 function SortableCollection({ collection, onCollectionClick }) {
-  const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
-    useSortable({ id: collection.id });
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: collection.id });
 
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -99,35 +39,18 @@ function SortableCollection({ collection, onCollectionClick }) {
         style={{ width: "150px", height: "225px" }}
         onClick={() => onCollectionClick(collection)}
       />
-      <h2 className="text-center font-bold mt-3 text-gray-100">
-        {collection.title}
-      </h2>
+      <h2 className="text-center font-bold mt-3 text-gray-100">{collection.title}</h2>
       <p className="text-center text-sm text-gray-400 mt-1">
-        {collection.type === "single"
-          ? "Volume Único"
-          : `${collection.volumes.filter((v) => v.owned).length}/${
-              collection.volumes.length
-            } volumes`}
+        {collection.type === 'single' ? 'Volume Único' : `${collection.volumes.filter(v => v.owned).length}/${collection.volumes.length} volumes`}
       </p>
-
+      
       <Link
         to={`/edit-collection/${collection.id}`}
         className="absolute top-3 right-3 bg-gray-900 bg-opacity-80 text-gray-100 p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
         onClick={(e) => e.stopPropagation()}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
         </svg>
       </Link>
     </div>
@@ -137,50 +60,29 @@ function SortableCollection({ collection, onCollectionClick }) {
 function Homepage() {
   const [mangaCollections, setMangaCollections] = useState([]);
   const [selectedCollection, setSelectedCollection] = useState(null);
-  const [sortOrder, setSortOrder] = useState("alphabetical");
+  const [sortOrder, setSortOrder] = useState('alphabetical');
   const [isEditingOrder, setIsEditingOrder] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
-  const [orderAsc, setOrderAsc] = useState(true); // Estado movido para o componente principal
 
   const sensors = useSensors(
     useSensor(PointerSensor),
-    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
   );
 
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, "collections"));
-      let data = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+      const data = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
       
-      // Se houver ordem personalizada salva, use-a
-      const hasCustomOrder = data.some(item => item.customOrder !== undefined);
-      
-      if (sortOrder === "alphabetical") {
-        // Ordenar alfabeticamente (crescente ou decrescente)
-        data.sort((a, b) => {
-          const comparison = a.title.localeCompare(b.title);
-          return orderAsc ? comparison : -comparison;
-        });
-      } else if (hasCustomOrder) {
-        // Ordenar pela ordem personalizada salva
-        data.sort((a, b) => (a.customOrder || 0) - (b.customOrder || 0));
+      if (sortOrder === 'alphabetical') {
+        data.sort((a, b) => a.title.localeCompare(b.title));
       }
       
       setMangaCollections(data);
     };
     fetchData();
-  }, [sortOrder, orderAsc]); // Adicionei orderAsc como dependência
-
-  const handleDragEnd = (event) => {
-    const { active, over } = event;
-    if (active.id !== over.id) {
-      setMangaCollections((items) => {
-        const oldIndex = items.findIndex((item) => item.id === active.id);
-        const newIndex = items.findIndex((item) => item.id === over.id);
-        return sortableArrayMove(items, oldIndex, newIndex);
-      });
-    }
-  };
+  }, [sortOrder]);
 
   const toggleOwned = async (colId, volId) => {
     const collectionRef = doc(db, "collections", colId);
@@ -201,76 +103,87 @@ function Homepage() {
     setSelectedCollection(updatedCollectionWithNewVolumes);
   };
 
-  const saveCustomOrder = async () => {
-    setIsSaving(true);
-    try {
-      const batch = writeBatch(db);
-      
-      // Atualizar a ordem personalizada para cada item
-      mangaCollections.forEach((collection, index) => {
-        const collectionRef = doc(db, "collections", collection.id);
-        batch.update(collectionRef, { customOrder: index });
+  const handleDragEnd = (event) => {
+    const { active, over } = event;
+
+    if (active.id !== over.id) {
+      setMangaCollections((items) => {
+        const oldIndex = items.findIndex((item) => item.id === active.id);
+        const newIndex = items.findIndex((item) => item.id === over.id);
+
+        return sortableArrayMove(items, oldIndex, newIndex);
       });
-      
-      await batch.commit();
-      console.log("Ordem personalizada salva com sucesso!");
-    } catch (error) {
-      console.error("Erro ao salvar ordem personalizada:", error);
-    } finally {
-      setIsSaving(false);
     }
   };
 
+  const toggleSortOrder = () => {
+    if (sortOrder === 'custom') {
+      setSortOrder('alphabetical');
+      setIsEditingOrder(false);
+      const sorted = [...mangaCollections].sort((a, b) => a.title.localeCompare(b.title));
+      setMangaCollections(sorted);
+    } else {
+      setSortOrder('custom');
+    }
+  };
+
+  const toggleEditOrder = () => {
+    setIsEditingOrder(!isEditingOrder);
+  };
+
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 w-full">
-      <div className="w-full flex flex-col items-center px-4">
-        <div className="max-w-7xl w-full">
-          <h1 className="text-4xl font-bold text-center mb-2 text-blue-400">
-            MyMangaList
-          </h1>
-          <p className="text-gray-400 mb-6 text-center">Loucura</p>
+    <div className="min-h-screen bg-gray-900 text-gray-100 w-full max-w-none">
+      <div className="flex flex-col items-center pt-8">
+        <h1 className="text-4xl font-bold text-center mb-2 text-blue-400">MyMangaList</h1>
+        <p className="text-gray-400 mb-6">Loucura</p>
+        
+        <div className="flex gap-4 mb-6">
+          <Link
+            to="/add-collection"
+            className="bg-blue-600 hover:bg-blue-700 text-white! font-bold! px-6 py-3 rounded-lg text-lg transition-colors shadow-lg"
+          >
+            Adicionar Coleção
+          </Link>
+        </div>
+        
+        <div className='flex gap-2 mb-6'>
+          <button
+            onClick={toggleSortOrder}
+            className="bg-gray-600 hover:bg-gray-700 text-white font-bold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
+          >
+            {sortOrder === 'alphabetical' ? 'Nome' : 'Personalizada'}
+            {sortOrder === 'custom' && !isEditingOrder ? <FaPencilAlt /> : null}
+          </button>
 
-          <div className="flex gap-4 mb-6 justify-center">
-            <Link
-              to="/add-collection"
-              className="bg-blue-600 hover:bg-blue-700 text-white! font-bold! px-6 py-3 rounded-lg text-lg transition-colors shadow-lg"
+          {sortOrder === 'custom' && (
+            <button
+              onClick={toggleEditOrder}
+              className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
             >
-              Adicionar Coleção
-            </Link>
-          </div>
-
-          <div className="w-full mb-6">
-            <SortSelector
-              sortOrder={sortOrder}
-              setSortOrder={setSortOrder}
-              isEditingOrder={isEditingOrder}
-              setIsEditingOrder={setIsEditingOrder}
-              onSaveOrder={saveCustomOrder}
-              orderAsc={orderAsc}
-              setOrderAsc={setOrderAsc}
-            />
-          </div>
-
-          {isEditingOrder && (
-            <div className="bg-yellow-900 border border-yellow-600 rounded-lg p-3 mb-4">
-              <p className="text-yellow-200 text-sm">
-                Arraste e solte para reorganizar as coleções.
-                {isSaving && <span className="ml-2">Salvando...</span>}
-              </p>
-            </div>
+              {isEditingOrder ? 'Salvar Ordem' : 'Editar Ordem'}
+              {isEditingOrder ? <FaCheck /> : <FaPencilAlt />}
+            </button>
           )}
         </div>
+
+        {isEditingOrder && (
+          <div className="bg-yellow-900 border border-yellow-600 rounded-lg p-3 mb-4">
+            <p className="text-yellow-200 text-sm">
+              Arraste e solte para reorganizar as coleções.
+            </p>
+          </div>
+        )}
       </div>
 
-      {/* grid das coleções */}
+      {/* Main Content */}
       <div className="w-full px-4 py-8 flex justify-center">
         {mangaCollections.length === 0 ? (
           <div className="text-center py-12">
-            <h2 className="text-xl text-gray-400 mb-2">
-              Nenhuma coleção encontrada
-            </h2>
+            <div className="text-gray-500 text-6xl mb-4">📚</div>
+            <h2 className="text-xl text-gray-400 mb-2">Nenhuma coleção encontrada</h2>
+            <p className="text-gray-500">Comece adicionando sua primeira coleção de mangás!</p>
           </div>
-        ) : sortOrder === "custom" && isEditingOrder ? (
+        ) : sortOrder === 'custom' && isEditingOrder ? (
           <DndContext
             sensors={sensors}
             collisionDetection={closestCenter}
@@ -321,7 +234,8 @@ function Homepage() {
           </div>
         )}
       </div>
-            {selectedCollection && (
+
+      {selectedCollection && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-800 rounded-xl p-6 w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col border border-gray-700 shadow-2xl">
             <div className="flex justify-between items-center border-b border-gray-700 pb-4 mb-4">
