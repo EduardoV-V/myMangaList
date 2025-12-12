@@ -1,50 +1,106 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { db } from "./firebase";
-import { doc, setDoc, getDoc, updateDoc, addDoc, collection, deleteDoc } from "firebase/firestore";
-import { defaultNewIndexGetter } from "@dnd-kit/sortable";
+import { doc, setDoc, getDoc, updateDoc, deleteDoc } from "firebase/firestore";
 
 const normalizeCollectionName = (name) => {
   return name
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+};
+
+// Função para formatar número para string com ponto como separador decimal
+const formatNumberForInput = (value) => {
+  if (value === null || value === undefined || value === "") return "";
+  if (typeof value === "number") {
+    // Converte número para string com ponto decimal
+    return value.toString().replace(".", ",");
+  }
+  return value;
+};
+
+// Função para converter string para número, tratando vírgula
+const parsePrice = (value) => {
+  if (!value && value !== 0) return null;
+  
+  // Se já for número, retorna
+  if (typeof value === "number") return value;
+  
+  // Remove espaços
+  let str = String(value).trim();
+  if (!str) return null;
+  
+  // Substitui vírgula por ponto e remove caracteres não numéricos (exceto ponto e vírgula)
+  str = str.replace(",", ".");
+  
+  // Remove múltiplos pontos decimais
+  const parts = str.split(".");
+  if (parts.length > 2) {
+    str = parts[0] + "." + parts.slice(1).join("");
+  }
+  
+  // Converte para número
+  const num = parseFloat(str);
+  
+  // Verifica se é um número válido
+  if (isNaN(num) || num < 0) return null;
+  
+  // Arredonda para 2 casas decimais
+  return Math.round(num * 100) / 100;
 };
 
 export default function CollectionForm() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [collectionType, setCollectionType] = useState('multi');
+
+  const [collectionType, setCollectionType] = useState("multi");
+
   const [formData, setFormData] = useState({
     title: "",
     coverUrl: "",
     type: "collection",
-    volumes: []
+    coverPrice: "", // armazenamos como string durante edição
+    volumes: [],
   });
 
+  /* ------------------ carregar ao editar ------------------ */
   useEffect(() => {
-    if (id) {
-      const fetchCollection = async () => {
-        const docRef = doc(db, "collections", id);
-        const docSnap = await getDoc(docRef);
-        
-        if (docSnap.exists()) {
-          const data = docSnap.data();
-          setFormData({ id: docSnap.id, ...data });
-          setCollectionType(data.type === 'single' ? 'single' : 'multi');
-        }
-      };
-      fetchCollection();
-    }
+    if (!id) return;
+    const fetchCollection = async () => {
+      const docRef = doc(db, "collections", id);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+
+        // Formata valores numéricos para string com vírgula para exibir no input
+        const normalized = {
+          ...data,
+          coverPrice: formatNumberForInput(data.coverPrice),
+          volumes: Array.isArray(data.volumes)
+            ? data.volumes.map((v) => ({
+                ...v,
+                pricePaid: formatNumberForInput(v.pricePaid),
+              }))
+            : [],
+        };
+
+        setFormData({ id: docSnap.id, ...normalized });
+        setCollectionType(data.type === "single" ? "single" : "multi");
+      }
+    };
+
+    fetchCollection();
   }, [id]);
 
+  /* ------------------ handlers ------------------ */
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -52,21 +108,27 @@ export default function CollectionForm() {
     const updatedVolumes = [...formData.volumes];
     updatedVolumes[index] = {
       ...updatedVolumes[index],
-      [field]: value
+      [field]: value,
     };
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      volumes: updatedVolumes
+      volumes: updatedVolumes,
     }));
   };
 
   const addNewVolume = () => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       volumes: [
         ...prev.volumes,
-        { id: prev.volumes.length + 1, title: "", coverUrl: "", owned: false }
-      ]
+        {
+          id: prev.volumes.length + 1,
+          title: "",
+          coverUrl: "",
+          owned: false,
+          pricePaid: "",
+        },
+      ],
     }));
   };
 
@@ -75,40 +137,53 @@ export default function CollectionForm() {
       .filter((_, i) => i !== index)
       .map((volume, newIndex) => ({
         ...volume,
-        id: newIndex + 1
+        id: newIndex + 1,
       }));
-      
-    setFormData(prev => ({
+
+    setFormData((prev) => ({
       ...prev,
-      volumes: updatedVolumes
+      volumes: updatedVolumes,
     }));
   };
 
+  /* ------------------ salvar ------------------ */
   const saveCollection = async () => {
     try {
       const collectionId = normalizeCollectionName(formData.title);
-      
+
+      // Converte coverPrice usando a função parsePrice
+      const coverPriceValue = parsePrice(formData.coverPrice);
+
+      // Prepara volumes convertendo pricePaid
+      const volumesPrepared = (formData.volumes || []).map((v) => ({
+        ...v,
+        pricePaid: parsePrice(v.pricePaid),
+      }));
+
       const collectionData = {
-        ...formData,
-        type: collectionType === 'single' ? 'single' : 'collection',
+        title: formData.title,
+        coverUrl: formData.coverUrl,
+        type: collectionType === "single" ? "single" : "collection",
+        coverPrice: coverPriceValue, // number ou null
+        volumes: volumesPrepared,
       };
 
       if (id) {
-        // Atualiza coleção existente
         const collectionRef = doc(db, "collections", id);
         await updateDoc(collectionRef, collectionData);
       } else {
-        // Cria nova coleção com ID normalizado
         const collectionRef = doc(db, "collections", collectionId);
         await setDoc(collectionRef, collectionData);
       }
-      
+
       navigate("/");
     } catch (error) {
       console.error("Erro ao salvar coleção: ", error);
+      alert("Erro ao salvar coleção. Veja o console para mais detalhes.");
     }
   };
 
+  /* ------------------ deletar ------------------ */
   const deleteCollection = async () => {
     if (window.confirm("Tem certeza que deseja excluir esta coleção?")) {
       try {
@@ -120,6 +195,7 @@ export default function CollectionForm() {
     }
   };
 
+  /* ------------------ render ------------------ */
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 w-full py-8">
       <div className="flex justify-center w-full px-4">
@@ -146,8 +222,8 @@ export default function CollectionForm() {
                   <input
                     type="radio"
                     value="multi"
-                    checked={collectionType === 'multi'}
-                    onChange={() => setCollectionType('multi')}
+                    checked={collectionType === "multi"}
+                    onChange={() => setCollectionType("multi")}
                     className="mr-2"
                   />
                   Múltiplos Volumes
@@ -156,8 +232,8 @@ export default function CollectionForm() {
                   <input
                     type="radio"
                     value="single"
-                    checked={collectionType === 'single'}
-                    onChange={() => setCollectionType('single')}
+                    checked={collectionType === "single"}
+                    onChange={() => setCollectionType("single")}
                     className="mr-2"
                   />
                   Volume Único
@@ -174,8 +250,8 @@ export default function CollectionForm() {
                 name="title"
                 value={formData.title}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100"
-                placeholder="Ex: Chainsaw Man"
+                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100"
+                placeholder="Ex: One Piece"
               />
               {formData.title && (
                 <p className="text-xs text-gray-400 mt-1">
@@ -193,49 +269,83 @@ export default function CollectionForm() {
                 name="coverUrl"
                 value={formData.coverUrl}
                 onChange={handleInputChange}
-                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100"
+                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100"
                 placeholder="https://exemplo.com/capa.jpg"
               />
               {formData.coverUrl && (
                 <div className="mt-3">
-                  <p className="text-sm text-gray-400 mb-2">Preview da Capa Principal:</p>
                   <img
                     src={formData.coverUrl}
-                    alt="Preview da capa"
-                    className="h-60 w-44 object-contain border border-gray-600 rounded-md bg-gray-900 mx-auto" // Aumentei o tamanho
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
+                    className="h-60 w-44 object-contain mx-auto border border-gray-600 rounded-md"
+                    alt="preview capa"
                   />
                 </div>
               )}
             </div>
 
-            {collectionType === 'multi' ? (
+            {/* VALOR DE CAPA */}
+            <div>
+              <label className="block text-sm font-medium text-gray-300 mb-2">
+                Valor de capa da coleção (opcional)
+              </label>
+              <input
+                type="text" // Alterado de "number" para "text" para aceitar vírgula
+                name="coverPrice"
+                value={formData.coverPrice ?? ""}
+                onChange={handleInputChange}
+                className="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100"
+                placeholder="Ex: 34,90"
+              />
+            </div>
+            <div className="flex justify-between pt-4 border-t border-gray-700">
+              {id && (
+                <button
+                  onClick={deleteCollection}
+                  className="px-4 py-2 !bg-red-700 text-white rounded-md"
+                >
+                  Excluir Coleção
+                </button>
+              )}
+
+              <button
+                onClick={saveCollection}
+                className="px-6 py-2 !bg-blue-600 text-white rounded-md ml-auto"
+                disabled={!formData.title || !formData.coverUrl}
+              >
+                {id ? "Atualizar" : "Salvar"} Coleção
+              </button>
+            </div>
+
+            {collectionType === "multi" ? (
               <div>
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-lg font-medium text-gray-300">Volumes</h3>
                   <button
                     onClick={addNewVolume}
-                    className="flex items-center bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md transition-colors"
+                    className="bg-blue-600 px-3 py-2 rounded-md"
                   >
-                    <span className="text-lg mr-1">+</span> Adicionar Volume
+                    + Adicionar Volume
                   </button>
                 </div>
 
                 <div className="space-y-4">
                   {formData.volumes.map((volume, index) => (
-                    <div key={index} className="border border-gray-700 rounded-lg p-4 bg-gray-750">
+                    <div
+                      key={index}
+                      className="border border-gray-700 rounded-lg p-4 bg-gray-750"
+                    >
                       <div className="flex justify-between items-center mb-3">
-                        <h4 className="font-medium text-gray-300">Volume {volume.id}</h4>
+                        <h4 className="font-medium text-gray-300">
+                          Volume {volume.id}
+                        </h4>
                         <button
                           onClick={() => removeVolume(index)}
-                          className="text-red-400 hover:text-red-300 transition-colors"
+                          className="text-red-400"
                         >
                           Remover
                         </button>
                       </div>
-                      
+
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                           <label className="block text-sm font-medium text-gray-400 mb-1">
@@ -244,48 +354,48 @@ export default function CollectionForm() {
                           <input
                             type="text"
                             value={volume.title}
-                            onChange={(e) => handleVolumeChange(index, 'title', e.target.value)}
-                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100"
-                            placeholder="Ex: Chainsaw Man #1"
+                            onChange={(e) =>
+                              handleVolumeChange(index, "title", e.target.value)
+                            }
+                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100"
                           />
                         </div>
-                        
+
                         <div>
                           <label className="block text-sm font-medium text-gray-400 mb-1">
                             Link da Capa
                           </label>
-                          <div className="flex gap-2 items-start">
-                            <input
-                              type="text"
-                              value={volume.coverUrl}
-                              onChange={(e) => handleVolumeChange(index, 'coverUrl', e.target.value)}
-                              className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-100"
-                              placeholder="https://exemplo.com/volume1.jpg"
-                            />
-                            {volume.coverUrl && (
-                              <img
-                                src={volume.coverUrl}
-                                alt="Preview"
-                                className="h-16 w-12 object-cover border border-gray-600 rounded ml-2" // Aumentei o tamanho
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                }}
-                              />
-                            )}
-                          </div>
+                          <input
+                            type="text"
+                            value={volume.coverUrl}
+                            onChange={(e) =>
+                              handleVolumeChange(index, "coverUrl", e.target.value)
+                            }
+                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100"
+                          />
+
                           {volume.coverUrl && (
-                            <div className="mt-2">
-                              <p className="text-xs text-gray-400 mb-1">Preview Grande:</p>
-                              <img
-                                src={volume.coverUrl}
-                                alt="Preview grande"
-                                className="h-40 w-28 object-contain border border-gray-600 rounded-md bg-gray-900 mx-auto" // Preview maior
-                                onError={(e) => {
-                                  e.target.style.display = 'none';
-                                }}
-                              />
-                            </div>
+                            <img
+                              src={volume.coverUrl}
+                              className="h-32 w-24 object-cover border border-gray-600 rounded mt-2 mx-auto"
+                              alt="preview volume"
+                            />
                           )}
+                        </div>
+
+                        <div className="md:col-span-2">
+                          <label className="block text-sm font-medium text-gray-400 mb-1">
+                            Valor pago (opcional)
+                          </label>
+                          <input
+                            type="text" // Alterado de "number" para "text" para aceitar vírgula
+                            value={volume.pricePaid ?? ""}
+                            onChange={(e) =>
+                              handleVolumeChange(index, "pricePaid", e.target.value)
+                            }
+                            className="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-gray-100"
+                            placeholder="Ex: 25,00"
+                          />
                         </div>
                       </div>
                     </div>
@@ -294,30 +404,14 @@ export default function CollectionForm() {
               </div>
             ) : (
               <div className="border border-gray-700 rounded-lg p-4 bg-gray-750">
-                <h3 className="text-lg font-medium text-gray-300 mb-4">Volume Único</h3>
+                <h3 className="text-lg font-medium text-gray-300 mb-4">
+                  Volume Único
+                </h3>
                 <p className="text-gray-400 text-sm">
-                  Para mangás de volume único, as informações da capa e título já foram preenchidas acima.
+                  Para volume único, o valor pago será o valor de capa (caso preenchido) ou o valor informado em volumes[0] se existir.
                 </p>
               </div>
             )}
-
-            <div className="flex justify-between pt-4 border-t border-gray-700">
-              {id && (
-                <button
-                  onClick={deleteCollection}
-                  className="px-4 py-2 bg-red-700 text-white rounded-md hover:bg-red-600 transition-colors"
-                >
-                  Excluir Coleção
-                </button>
-              )}
-              <button
-                onClick={saveCollection}
-                className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500 transition-colors ml-auto disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={!formData.title || !formData.coverUrl || (collectionType === 'multi' && formData.volumes.length === 0)}
-              >
-                {id ? "Atualizar" : "Salvar"} Coleção
-              </button>
-            </div>
           </div>
         </div>
       </div>

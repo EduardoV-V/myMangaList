@@ -27,6 +27,62 @@ import {
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 
+/* -------------------------------------------------------------------------- */
+/*   Função para calcular o valor total de uma coleção                        */
+/* -------------------------------------------------------------------------- */
+
+// Calcula preço total da coleção considerando volumes obtidos
+const calculateCollectionTotal = (collection) => {
+  const cover = collection.coverPrice ?? null;
+
+  // --- COLEÇÃO SINGLE ---
+  if (collection.type === "single") {
+    const v = collection.volumes?.[0];
+
+    // se não tiver volume, retorna 0
+    if (!v) return 0;
+
+    // só conta volume único se estiver marcado como comprado
+    if (v.owned !== true) return 0;
+
+    // prioridade: pricePaid > coverPrice > 0
+    if (v.pricePaid != null && !isNaN(v.pricePaid)) {
+      return Number(v.pricePaid);
+    }
+
+    if (cover != null) {
+      return Number(cover);
+    }
+
+    return 0;
+  }
+
+  // --- COLEÇÃO COM MÚLTIPLOS VOLUMES ---
+  let total = 0;
+
+  for (const v of collection.volumes || []) {
+    // soma apenas volumes marcados como OWNED
+    if (v.owned !== true) continue;
+
+    if (v.pricePaid != null && !isNaN(v.pricePaid)) {
+      total += Number(v.pricePaid);
+    } else if (cover != null) {
+      total += Number(cover);
+    }
+  }
+
+  return total;
+};
+
+const formatPrice = (value) => {
+  if (value == null || isNaN(value)) return null;
+  return Number(value).toFixed(2).replace(".", ",");
+};
+
+/* -------------------------------------------------------------------------- */
+/*   COMPONENTE SortSelector                                                  */
+/* -------------------------------------------------------------------------- */
+
 function SortSelector({ sortOrder, setSortOrder, isEditingOrder, setIsEditingOrder, onSaveOrder, orderAsc, setOrderAsc }) {
   const toggleMode = () => {
     if (sortOrder === "alphabetical") {
@@ -74,6 +130,10 @@ function SortSelector({ sortOrder, setSortOrder, isEditingOrder, setIsEditingOrd
   );
 }
 
+/* -------------------------------------------------------------------------- */
+/*   COMPONENTE SortableCollection                                             */
+/* -------------------------------------------------------------------------- */
+
 function SortableCollection({ collection, onCollectionClick }) {
   const { attributes, listeners, setNodeRef, transform, transition, isDragging } =
     useSortable({ id: collection.id });
@@ -99,40 +159,23 @@ function SortableCollection({ collection, onCollectionClick }) {
         style={{ width: "150px", height: "225px" }}
         onClick={() => onCollectionClick(collection)}
       />
+
       <h2 className="text-center font-bold mt-3 text-gray-100">
         {collection.title}
       </h2>
+
       <p className="text-center text-sm text-gray-400 mt-1">
         {collection.type === "single"
           ? "Volume Único"
-          : `${collection.volumes.filter((v) => v.owned).length}/${
-              collection.volumes.length
-            } volumes`}
+          : `${collection.volumes.filter((v) => v.owned).length}/${collection.volumes.length} volumes`}
       </p>
-
-      <Link
-        to={`/edit-collection/${collection.id}`}
-        className="absolute top-3 right-3 bg-gray-900 bg-opacity-80 text-gray-100 p-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-          />
-        </svg>
-      </Link>
     </div>
   );
 }
+
+/* -------------------------------------------------------------------------- */
+/*   COMPONENTE PRINCIPAL: HOMEPAGE                                           */
+/* -------------------------------------------------------------------------- */
 
 function Homepage() {
   const [mangaCollections, setMangaCollections] = useState([]);
@@ -140,7 +183,7 @@ function Homepage() {
   const [sortOrder, setSortOrder] = useState("alphabetical");
   const [isEditingOrder, setIsEditingOrder] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
-  const [orderAsc, setOrderAsc] = useState(true); // Estado movido para o componente principal
+  const [orderAsc, setOrderAsc] = useState(true);
 
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -151,25 +194,27 @@ function Homepage() {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, "collections"));
       let data = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-      
-      // Se houver ordem personalizada salva, use-a
+
       const hasCustomOrder = data.some(item => item.customOrder !== undefined);
-      
+
       if (sortOrder === "alphabetical") {
-        // Ordenar alfabeticamente (crescente ou decrescente)
-        data.sort((a, b) => {
-          const comparison = a.title.localeCompare(b.title);
-          return orderAsc ? comparison : -comparison;
-        });
+        data.sort((a, b) =>
+          orderAsc ? a.title.localeCompare(b.title) : b.title.localeCompare(a.title)
+        );
       } else if (hasCustomOrder) {
-        // Ordenar pela ordem personalizada salva
         data.sort((a, b) => (a.customOrder || 0) - (b.customOrder || 0));
       }
-      
+
       setMangaCollections(data);
     };
     fetchData();
-  }, [sortOrder, orderAsc]); // Adicionei orderAsc como dependência
+  }, [sortOrder, orderAsc]);
+
+  /* Somatório geral das coleções */
+  const totalSpent = mangaCollections.reduce(
+    (sum, col) => sum + calculateCollectionTotal(col),
+    0
+  );
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
@@ -205,21 +250,23 @@ function Homepage() {
     setIsSaving(true);
     try {
       const batch = writeBatch(db);
-      
-      // Atualizar a ordem personalizada para cada item
+
       mangaCollections.forEach((collection, index) => {
         const collectionRef = doc(db, "collections", collection.id);
         batch.update(collectionRef, { customOrder: index });
       });
-      
+
       await batch.commit();
-      console.log("Ordem personalizada salva com sucesso!");
     } catch (error) {
       console.error("Erro ao salvar ordem personalizada:", error);
     } finally {
       setIsSaving(false);
     }
   };
+
+  /* ---------------------------------------------------------------------- */
+  /*   RENDERIZAÇÃO                                                         */
+  /* ---------------------------------------------------------------------- */
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 w-full">
@@ -228,7 +275,11 @@ function Homepage() {
           <h1 className="text-4xl font-bold text-center mb-2 text-blue-400">
             MyMangaList
           </h1>
-          <p className="text-gray-400 mb-6 text-center">Loucura</p>
+
+          {/* NOVO: total gasto */}
+          <p className="text-center text-lg text-gray-300 mb-4">
+            Total investido: R$ {totalSpent.toFixed(2)}
+          </p>
 
           <div className="flex gap-4 mb-6 justify-center">
             <Link
@@ -239,30 +290,19 @@ function Homepage() {
             </Link>
           </div>
 
-          <div className="w-full mb-6">
-            <SortSelector
-              sortOrder={sortOrder}
-              setSortOrder={setSortOrder}
-              isEditingOrder={isEditingOrder}
-              setIsEditingOrder={setIsEditingOrder}
-              onSaveOrder={saveCustomOrder}
-              orderAsc={orderAsc}
-              setOrderAsc={setOrderAsc}
-            />
-          </div>
-
-          {isEditingOrder && (
-            <div className="bg-yellow-900 border border-yellow-600 rounded-lg p-3 mb-4">
-              <p className="text-yellow-200 text-sm">
-                Arraste e solte para reorganizar as coleções.
-                {isSaving && <span className="ml-2">Salvando...</span>}
-              </p>
-            </div>
-          )}
+          <SortSelector
+            sortOrder={sortOrder}
+            setSortOrder={setSortOrder}
+            isEditingOrder={isEditingOrder}
+            setIsEditingOrder={setIsEditingOrder}
+            onSaveOrder={saveCustomOrder}
+            orderAsc={orderAsc}
+            setOrderAsc={setOrderAsc}
+          />
         </div>
       </div>
 
-      {/* grid das coleções */}
+      {/* GRID DE COLEÇÕES */}
       <div className="w-full px-4 py-8 flex justify-center">
         {mangaCollections.length === 0 ? (
           <div className="text-center py-12">
@@ -306,9 +346,11 @@ function Homepage() {
                   {col.title}
                 </h2>
                 <p className="text-center text-xs text-gray-400 mt-1">
-                  {col.type === 'single' ? 'Volume Único' : `${col.volumes.filter(v => v.owned).length}/${col.volumes.length} volumes`}
+                  {col.type === 'single'
+                    ? 'Volume Único'
+                    : `${col.volumes.filter(v => v.owned).length}/${col.volumes.length} volumes`}
                 </p>
-                
+
                 <Link
                   to={`/edit-collection/${col.id}`}
                   className="absolute top-2 right-2 bg-gray-900 bg-opacity-80 text-gray-100 p-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-md"
@@ -323,19 +365,41 @@ function Homepage() {
           </div>
         )}
       </div>
-        {selectedCollection && (
+
+      {/* MODAL DE DETALHES DA COLEÇÃO */}
+      {selectedCollection && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-800 rounded-xl p-6 w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col border border-gray-700 shadow-2xl">
-            <div className="flex justify-between items-center border-b border-gray-700 pb-4 mb-4">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-100">{selectedCollection.title}</h2>
+            <div className="flex items-start justify-between border-b border-gray-700 pb-6 mb-4">
+              <div className="flex-1 pr-6">
+                <h2 className="text-2xl font-bold text-gray-100">
+                  {selectedCollection.title}
+                </h2>
+
                 <p className="text-gray-400">
-                  {selectedCollection.type === 'single' ? 'Volume Único' : 
-                    `${selectedCollection.volumes.filter(v => v.owned).length}/${selectedCollection.volumes.length} volumes adquiridos`}
+                  {selectedCollection.type === "single"
+                    ? "Volume Único"
+                    : `${selectedCollection.volumes.filter(v => v.owned).length}/${selectedCollection.volumes.length} volumes adquiridos`}
+                </p>
+
+                {/* TOTAL DA COLEÇÃO */}
+                <p className="text-gray-300 mt-2 font-semibold">
+                  Total desta coleção: R$ {calculateCollectionTotal(selectedCollection).toFixed(2)}
                 </p>
               </div>
+
+              {/* COLUNA DIREITA – imagem */}
+              {selectedCollection.coverUrl && (
+                <img
+                  src={selectedCollection.coverUrl}
+                  alt="Capa da coleção"
+                  className="hidden md:block w-36 h-52 object-cover rounded-md shadow-lg border border-gray-700"
+                />
+              )}
+
+              {/* Botão fechar */}
               <button
-                className="text-gray-400 hover:text-gray-100 text-3xl transition-colors"
+                className="text-gray-400 hover:text-gray-100 text-3xl transition-colors ml-4"
                 onClick={() => setSelectedCollection(null)}
               >
                 &times;
@@ -365,6 +429,26 @@ function Homepage() {
                     <p className="text-sm mt-2 font-medium text-gray-300">
                       {selectedCollection.type === 'single' ? selectedCollection.title : `Vol. ${vol.id}`}
                     </p>
+
+                    {vol.owned && (
+                      <p className="text-xs text-gray-400 mt-1">
+
+                        {/* Se pricePaid existe → usa pricePaid */}
+                        {vol.pricePaid != null && !isNaN(vol.pricePaid) ? (
+                          <>Pago: R$ {formatPrice(vol.pricePaid)}</>
+                        ) : 
+
+                        /* Senão → usa coverPrice da coleção */
+                        selectedCollection.coverPrice != null ? (
+                          <>Pago: R$ {formatPrice(selectedCollection.coverPrice)}</>
+                        ) : (
+
+                        /* Senão → mostra 0,00 */
+                          <>Pago: R$ 0,00</>
+                        )}
+
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
@@ -372,9 +456,14 @@ function Homepage() {
           </div>
         </div>
       )}
+
     </div>
   );
 }
+
+/* -------------------------------------------------------------------------- */
+/*   ROUTER                                                                    */
+/* -------------------------------------------------------------------------- */
 
 export default function App() {
   return (
