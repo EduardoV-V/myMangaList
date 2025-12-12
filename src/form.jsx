@@ -12,43 +12,28 @@ const normalizeCollectionName = (name) => {
     .replace(/(^-|-$)/g, "");
 };
 
-// Função para formatar número para string com ponto como separador decimal
 const formatNumberForInput = (value) => {
   if (value === null || value === undefined || value === "") return "";
   if (typeof value === "number") {
-    // Converte número para string com ponto decimal
     return value.toString().replace(".", ",");
   }
   return value;
 };
 
-// Função para converter string para número, tratando vírgula
 const parsePrice = (value) => {
   if (!value && value !== 0) return null;
-  
-  // Se já for número, retorna
   if (typeof value === "number") return value;
-  
-  // Remove espaços
   let str = String(value).trim();
   if (!str) return null;
-  
-  // Substitui vírgula por ponto e remove caracteres não numéricos (exceto ponto e vírgula)
   str = str.replace(",", ".");
-  
-  // Remove múltiplos pontos decimais
   const parts = str.split(".");
+
   if (parts.length > 2) {
     str = parts[0] + "." + parts.slice(1).join("");
   }
   
-  // Converte para número
   const num = parseFloat(str);
-  
-  // Verifica se é um número válido
   if (isNaN(num) || num < 0) return null;
-  
-  // Arredonda para 2 casas decimais
   return Math.round(num * 100) / 100;
 };
 
@@ -62,7 +47,7 @@ export default function CollectionForm() {
     title: "",
     coverUrl: "",
     type: "collection",
-    coverPrice: "", // armazenamos como string durante edição
+    coverPrice: "",
     volumes: [],
   });
 
@@ -75,7 +60,6 @@ export default function CollectionForm() {
       if (docSnap.exists()) {
         const data = docSnap.data();
 
-        // Formata valores numéricos para string com vírgula para exibir no input
         const normalized = {
           ...data,
           coverPrice: formatNumberForInput(data.coverPrice),
@@ -150,11 +134,7 @@ export default function CollectionForm() {
   const saveCollection = async () => {
     try {
       const collectionId = normalizeCollectionName(formData.title);
-
-      // Converte coverPrice usando a função parsePrice
       const coverPriceValue = parsePrice(formData.coverPrice);
-
-      // Prepara volumes convertendo pricePaid
       const volumesPrepared = (formData.volumes || []).map((v) => ({
         ...v,
         pricePaid: parsePrice(v.pricePaid),
@@ -164,7 +144,7 @@ export default function CollectionForm() {
         title: formData.title,
         coverUrl: formData.coverUrl,
         type: collectionType === "single" ? "single" : "collection",
-        coverPrice: coverPriceValue, // number ou null
+        coverPrice: coverPriceValue,
         volumes: volumesPrepared,
       };
 
@@ -289,7 +269,7 @@ export default function CollectionForm() {
                 Valor de capa da coleção (opcional)
               </label>
               <input
-                type="text" // Alterado de "number" para "text" para aceitar vírgula
+                type="text"
                 name="coverPrice"
                 value={formData.coverPrice ?? ""}
                 onChange={handleInputChange}
@@ -388,7 +368,7 @@ export default function CollectionForm() {
                             Valor pago (opcional)
                           </label>
                           <input
-                            type="text" // Alterado de "number" para "text" para aceitar vírgula
+                            type="text"
                             value={volume.pricePaid ?? ""}
                             onChange={(e) =>
                               handleVolumeChange(index, "pricePaid", e.target.value)

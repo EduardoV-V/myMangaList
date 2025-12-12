@@ -28,24 +28,17 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 
 /* -------------------------------------------------------------------------- */
-/*   Função para calcular o valor total de uma coleção                        */
+/*   calcula o valor total                                                    */
 /* -------------------------------------------------------------------------- */
 
-// Calcula preço total da coleção considerando volumes obtidos
 const calculateCollectionTotal = (collection) => {
   const cover = collection.coverPrice ?? null;
 
-  // --- COLEÇÃO SINGLE ---
   if (collection.type === "single") {
     const v = collection.volumes?.[0];
-
-    // se não tiver volume, retorna 0
     if (!v) return 0;
-
-    // só conta volume único se estiver marcado como comprado
     if (v.owned !== true) return 0;
 
-    // prioridade: pricePaid > coverPrice > 0
     if (v.pricePaid != null && !isNaN(v.pricePaid)) {
       return Number(v.pricePaid);
     }
@@ -57,11 +50,9 @@ const calculateCollectionTotal = (collection) => {
     return 0;
   }
 
-  // --- COLEÇÃO COM MÚLTIPLOS VOLUMES ---
   let total = 0;
 
   for (const v of collection.volumes || []) {
-    // soma apenas volumes marcados como OWNED
     if (v.owned !== true) continue;
 
     if (v.pricePaid != null && !isNaN(v.pricePaid)) {
@@ -80,7 +71,7 @@ const formatPrice = (value) => {
 };
 
 /* -------------------------------------------------------------------------- */
-/*   COMPONENTE SortSelector                                                  */
+/*   SortSelector                                                             */
 /* -------------------------------------------------------------------------- */
 
 function SortSelector({ sortOrder, setSortOrder, isEditingOrder, setIsEditingOrder, onSaveOrder, orderAsc, setOrderAsc }) {
@@ -131,7 +122,7 @@ function SortSelector({ sortOrder, setSortOrder, isEditingOrder, setIsEditingOrd
 }
 
 /* -------------------------------------------------------------------------- */
-/*   COMPONENTE SortableCollection                                             */
+/*   SortableCollection                                                       */
 /* -------------------------------------------------------------------------- */
 
 function SortableCollection({ collection, onCollectionClick }) {
@@ -174,7 +165,7 @@ function SortableCollection({ collection, onCollectionClick }) {
 }
 
 /* -------------------------------------------------------------------------- */
-/*   COMPONENTE PRINCIPAL: HOMEPAGE                                           */
+/*   COMPONENTE PRINCIPAL: HOME                                               */
 /* -------------------------------------------------------------------------- */
 
 function Homepage() {
@@ -210,7 +201,7 @@ function Homepage() {
     fetchData();
   }, [sortOrder, orderAsc]);
 
-  /* Somatório geral das coleções */
+  /* soma total das colecoes */
   const totalSpent = mangaCollections.reduce(
     (sum, col) => sum + calculateCollectionTotal(col),
     0
@@ -265,7 +256,7 @@ function Homepage() {
   };
 
   /* ---------------------------------------------------------------------- */
-  /*   RENDERIZAÇÃO                                                         */
+  /*   RENDERIZACAO                                                         */
   /* ---------------------------------------------------------------------- */
 
   return (
@@ -276,7 +267,7 @@ function Homepage() {
             MyMangaList
           </h1>
 
-          {/* NOVO: total gasto */}
+          {/* total gasto */}
           <p className="text-center text-lg text-gray-300 mb-4">
             Total investido: R$ {totalSpent.toFixed(2)}
           </p>
@@ -302,7 +293,7 @@ function Homepage() {
         </div>
       </div>
 
-      {/* GRID DE COLEÇÕES */}
+      {/* GRID DE COLECOES */}
       <div className="w-full px-4 py-8 flex justify-center">
         {mangaCollections.length === 0 ? (
           <div className="text-center py-12">
@@ -366,7 +357,7 @@ function Homepage() {
         )}
       </div>
 
-      {/* MODAL DE DETALHES DA COLEÇÃO */}
+      {/* MODAL DE DETALHES DA COLECAO */}
       {selectedCollection && (
         <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
           <div className="bg-gray-800 rounded-xl p-6 w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col border border-gray-700 shadow-2xl">
@@ -382,13 +373,13 @@ function Homepage() {
                     : `${selectedCollection.volumes.filter(v => v.owned).length}/${selectedCollection.volumes.length} volumes adquiridos`}
                 </p>
 
-                {/* TOTAL DA COLEÇÃO */}
+                {/* TOTAL DA COLECAO */}
                 <p className="text-gray-300 mt-2 font-semibold">
                   Total desta coleção: R$ {calculateCollectionTotal(selectedCollection).toFixed(2)}
                 </p>
               </div>
 
-              {/* COLUNA DIREITA – imagem */}
+              {/* COLUNA DIREITA imagem */}
               {selectedCollection.coverUrl && (
                 <img
                   src={selectedCollection.coverUrl}
@@ -397,7 +388,7 @@ function Homepage() {
                 />
               )}
 
-              {/* Botão fechar */}
+              {/* botao fechar */}
               <button
                 className="text-gray-400 hover:text-gray-100 text-3xl transition-colors ml-4"
                 onClick={() => setSelectedCollection(null)}
@@ -433,17 +424,17 @@ function Homepage() {
                     {vol.owned && (
                       <p className="text-xs text-gray-400 mt-1">
 
-                        {/* Se pricePaid existe → usa pricePaid */}
+                        {/* se pricePaid  existe usa pricePaid */}
                         {vol.pricePaid != null && !isNaN(vol.pricePaid) ? (
                           <>Pago: R$ {formatPrice(vol.pricePaid)}</>
                         ) : 
 
-                        /* Senão → usa coverPrice da coleção */
+                        /* se nao usa coverPrice da colecao */
                         selectedCollection.coverPrice != null ? (
                           <>Pago: R$ {formatPrice(selectedCollection.coverPrice)}</>
                         ) : (
 
-                        /* Senão → mostra 0,00 */
+                        /* senao mostra 0 */
                           <>Pago: R$ 0,00</>
                         )}
 
