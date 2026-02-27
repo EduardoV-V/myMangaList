@@ -90,7 +90,7 @@ export default function Catalog() {
             </h1>
 
             <button
-              onClick={() => navigate("/add-form")}
+              onClick={() => navigate("/add-collection")}
               className="bg-green-600 px-4 py-2 rounded hover:bg-green-500"
             >
               + Sugerir Coleção
