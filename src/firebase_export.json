@@ -1,0 +1,1952 @@
+{
+  "collections": [
+    {
+      "id": "a-voz-do-silencio",
+      "title": "A Voz do Silêncio",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/54/54752/produto/71144656/3a719277ed.jpg",
+      "type": "collection",
+      "cover_price": ""
+    },
+    {
+      "id": "adeus-eri",
+      "title": "Adeus, Eri",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2d4bffllq94d318va3qqf82j0h/-S897-FWEBP",
+      "type": "single",
+      "cover_price": 34.9
+    },
+    {
+      "id": "boa-noite-punpun",
+      "title": "Boa Noite PunPun",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2018/12/Boa-Noite-Punpun-01-Capa_p.jpg",
+      "type": "collection",
+      "cover_price": null
+    },
+    {
+      "id": "cancoes-da-noite",
+      "title": "Canções da noite",
+      "cover_url": "https://a.storyblok.com/f/178900/897x1313/dc2679bb0d/cancoes-da-noite-panini-volume-1.png/m/filters:quality(95)format(webp)",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "chainsaw-man",
+      "title": "Chainsaw Man",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_23m0sqfb5l2nj6hategr0r364d/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 45.9
+    },
+    {
+      "id": "chainsaw-man-buddy-stories",
+      "title": "Chainsaw Man: Buddy Stories",
+      "cover_url": "https://preview.redd.it/goz3wq1b6dt71.jpg?auto=webp&s=a191d7d78770059bfeac41db1fc26940947c739c",
+      "type": "single",
+      "cover_price": 60
+    },
+    {
+      "id": "choujin-x",
+      "title": "Choujin X",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_npleumh2v91ed7js4f0b0di65s/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "dan-da-dan",
+      "title": "Dan Da Dan",
+      "cover_url": "https://m.media-amazon.com/images/I/81kHWcb7n4L.jpg",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "death-note",
+      "title": "Death Note",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/06/dn-black-edition-01.jpg",
+      "type": "collection",
+      "cover_price": 53.9
+    },
+    {
+      "id": "declinio-de-um-homem",
+      "title": "Declínio de um Homem",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2023/11/declinio-de-um-homem-sobrecapa.jpg",
+      "type": "single",
+      "cover_price": 54.9
+    },
+    {
+      "id": "demon-slayer",
+      "title": "Demon Slayer",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kf32gsogi53qj8o3vjbju9s861/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "diario-dos-gatos-yon-mu",
+      "title": "Diário dos Gatos: Yon & Mu",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2022/10/manga-diario-dos-gatos-yon-mu-capa.jpg",
+      "type": "single",
+      "cover_price": 39.9
+    },
+    {
+      "id": "evangelion",
+      "title": "Evangelion",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2022/10/neon-genesis-evangelion-collectors-edition-01-capa.jpg",
+      "type": "collection",
+      "cover_price": 79.9
+    },
+    {
+      "id": "fire-punch",
+      "title": "Fire Punch",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/06/Fire-Punch-01-Capa.jpg",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "frieren-e-a-jornada-para-o-alem",
+      "title": "Frieren e a Jornada para o Além",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kblh3ff2kp6afdr1i8cis0b430/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "historias-curtas-de-tatsuki-fujimoto",
+      "title": "Histórias Curtas de Tatsuki Fujimoto",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rbdorbdjth2sj4ovpeidp4pd3j/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 44.9
+    },
+    {
+      "id": "initial-d",
+      "title": "Initial D",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_cbs4rq1jup0uv1024daqgki729/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 50
+    },
+    {
+      "id": "jojo-s-bizarre-adventure-parte-4",
+      "title": "Jojo's Bizarre Adventure Parte 4",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_796340-MLU77450034699_072024-F.jpg",
+      "type": "collection",
+      "cover_price": 55.9
+    },
+    {
+      "id": "jojo-s-bizarre-adventure-parte-5",
+      "title": "Jojo's Bizarre Adventure Parte 5",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ii6fc7pf4d2nbbq9ppj628gb0k/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": null
+    },
+    {
+      "id": "jojo-s-bizarre-adventure-parte-6",
+      "title": "Jojo's Bizarre Adventure Parte 6",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_1orr5ddasp4grabv2adre89i58/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": null
+    },
+    {
+      "id": "jojo-s-bizarre-adventure-parte-7",
+      "title": "Jojo's Bizarre Adventure Parte 7",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_eum54k29ot2t59q5mcgrrcgl75/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 55.9
+    },
+    {
+      "id": "look-back",
+      "title": "Look Back",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_8ajjuk4pc925hc23feujrmbb7g/-S897-FWEBP",
+      "type": "single",
+      "cover_price": 34.9
+    },
+    {
+      "id": "madoka-magica",
+      "title": "Madoka Magica",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2020/03/NewPOP_Madoka01.jpg",
+      "type": "collection",
+      "cover_price": null
+    },
+    {
+      "id": "madoka-magica-homura-s-revenge",
+      "title": "Madoka Magica: Homura's Revenge!",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2022/02/NewPOP_HomuraRevenge01.jpg",
+      "type": "collection",
+      "cover_price": 20
+    },
+    {
+      "id": "minha-adoravel-cosplayer",
+      "title": "Minha Adorável Cosplayer",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_j1rpvvl58h6g56akfkjlcl7m70/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": null
+    },
+    {
+      "id": "minha-estrela-preferida",
+      "title": "Minha Estrela Preferida",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_3p6cvssu1h4u5f3iud66sp470d/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": null
+    },
+    {
+      "id": "monster",
+      "title": "Monster",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_bclqnsos3p59d6v9kdhm817s60/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 109.9
+    },
+    {
+      "id": "o-cara-que-estou-a-fim-nao-e-um-cara",
+      "title": "O Cara que Estou a Fim Não é um Cara?!",
+      "cover_url": "https://cdn.awsli.com.br/800x800/54/54752/produto/276489803/9788583625483-lha0f2ignd.jpg",
+      "type": "collection",
+      "cover_price": 34.9
+    },
+    {
+      "id": "o-pecado-original-de-takopi",
+      "title": "O Pecado Original de Takopi",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_obrijh58n13tp4b1dvd3pdbj3d/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 45
+    },
+    {
+      "id": "the-promised-neverland",
+      "title": "The Promised Neverland",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_9ochme5v2t44jdjnuivg3ste6k/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 34.9
+    },
+    {
+      "id": "tokyo-ghoul",
+      "title": "Tokyo Ghoul",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b0j1o6bno11h363l7m26r2tn2f/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 35
+    },
+    {
+      "id": "tokyo-ghoul-re",
+      "title": "Tokyo Ghoul: re",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_g1g9pp9bp50i1e93lbsft6rv7t/-S897-FWEBP",
+      "type": "collection",
+      "cover_price": 44.9
+    }
+  ],
+  "volumes": [
+    {
+      "collection_id": "a-voz-do-silencio",
+      "volume_number": 0,
+      "title": "A Voz do Silêncio #01",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/54/54752/produto/71144656/3a719277ed.jpg"
+    },
+    {
+      "collection_id": "a-voz-do-silencio",
+      "volume_number": 1,
+      "title": "A Voz do Silêncio #02",
+      "cover_url": "https://cdn.awsli.com.br/800x800/54/54752/produto/92130124/d9680382fa.jpg"
+    },
+    {
+      "collection_id": "a-voz-do-silencio",
+      "volume_number": 2,
+      "title": "A Voz do Silêncio #03",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/54/54752/produto/115178321/3045645323.jpg"
+    },
+    {
+      "collection_id": "a-voz-do-silencio",
+      "volume_number": 3,
+      "title": "A Voz do Silêncio #04",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/54/54752/produto/143039611/4d72cf863b.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 0,
+      "title": "Punpun #1",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2018/12/Boa-Noite-Punpun-01-Capa_p.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 1,
+      "title": "Punpun #2",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2018/12/Boa-Noite-Punpun-02-Capa_p.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 2,
+      "title": "Punpun #3",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/03/Boa-Noite-Punpun-03-Capa_p.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 3,
+      "title": "Punpun #4",
+      "cover_url": "https://m.media-amazon.com/images/I/51xt9XrvOCL.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 4,
+      "title": "Punpun #5",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/05/Boa-Noite-Punpun-05-Capa_p.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 5,
+      "title": "Punpun #6",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/05/Boa-Noite-Punpun-06-Capa_p.jpg"
+    },
+    {
+      "collection_id": "boa-noite-punpun",
+      "volume_number": 6,
+      "title": "Punpun #7",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/07/Boa-Noite-Punpun-07-Capa_p.jpg"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 0,
+      "title": "Canções da Noite #01",
+      "cover_url": "https://a.storyblok.com/f/178900/897x1313/dc2679bb0d/cancoes-da-noite-panini-volume-1.png/m/filters:quality(95)format(webp)"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 1,
+      "title": "Canções da Noite #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_6arfmhprn914jaakbig920m81o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 2,
+      "title": "Canções da Noite #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_j47s1h75id6eh1s85pnq8rnd2i/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 3,
+      "title": "Canções da Noite #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_hmrlei048t4ojdbfmtv9507p47/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 4,
+      "title": "Canções da Noite #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ihbi5ajc0511n1bsold9pu0k0u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 5,
+      "title": "Canções da Noite #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_tii5kkq6n55nven89ls2skbc04/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 6,
+      "title": "Canções da Noite #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ke6mrd94o559v1eg93mkpt967d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 7,
+      "title": "Canções da Noite #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_gmq60tguqt2i5086gqh1ogcj47/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 8,
+      "title": "Canções da Noite #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b2e5i9i9kh239615172rvu711m/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 9,
+      "title": "Canções da Noite #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rfhhgistdl07v17b8banhdnb12/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 10,
+      "title": "Canções da Noite #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_mcn8o28pt53f933jluiak8gp6u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 11,
+      "title": "Canções da Noite #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_hpuchs5roh43fb3uiutpgkm80v/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 12,
+      "title": "Canções da Noite #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_jhnagos5nt107amhb9vi4ras7r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 13,
+      "title": "Canções da Noite #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_302bt49ftt2vj8021log5r2j7l/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 14,
+      "title": "Canções da Noite #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_tta3b7ulvp7v59c2di29hn913n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 15,
+      "title": "Canções da Noite #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_gbpvknq0055sr5je3k3l7m774p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 16,
+      "title": "Canções da Noite #17",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_csqd7317bp31lfklco6r2mr00p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 17,
+      "title": "Canções da Noite #18",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_9hb1d0in253lt3r7lopppulq4r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 18,
+      "title": "Canções da Noite #19",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_tfv5jo1hhh12d7vqbv5e4sh076/-S897-FWEBP"
+    },
+    {
+      "collection_id": "cancoes-da-noite",
+      "volume_number": 19,
+      "title": "Canções da Noite #20",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_aa8j2h57e12enbmvbk0n70g15k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 0,
+      "title": "Chainsaw Man #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_23m0sqfb5l2nj6hategr0r364d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 1,
+      "title": "Chainsaw Man #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_h4dluhstqp7tb4dq0vsima2q0m/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 2,
+      "title": "Chainsaw Man #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_p8bijc1rud2nd01bg6oj6ud368/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 3,
+      "title": "Chainsaw Man #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_q7s5ku236t7g78r5vc38offl5l/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 4,
+      "title": "Chainsaw Man #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_4hgteld3u979l8u02tavcgh32p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 5,
+      "title": "Chainsaw Man #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_0l8kn1ndnl03d1mpv4jimt6f2k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 6,
+      "title": "Chainsaw Man #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_f4hva03vf14ehb5ocm1hh9kj1k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 7,
+      "title": "Chainsaw Man #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_h9vgp21md552f73knikiqgpa74/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 8,
+      "title": "Chainsaw Man #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2hdidbeq6t5edc0ngfr12hml4o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 9,
+      "title": "Chainsaw Man #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_llp7r5geo916573aet10c93p4j/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 10,
+      "title": "Chainsaw Man #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_lod80bhjfh5apcsij86jhq1e4c/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 11,
+      "title": "Chainsaw Man #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_e6m499s1ld5spd779b9jejhj5o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 12,
+      "title": "Chainsaw Man #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_8a8m1gig0l1uj2rkst0v78pi1l/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 13,
+      "title": "Chainsaw Man #14",
+      "cover_url": "https://storage.geralgeek.com.br/images/venda/Panini-654e6ac71cd0c.png"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 14,
+      "title": "Chainsaw Man #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_1dncgnslr52t30fjtvk7918o5e/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 15,
+      "title": "Chainsaw Man #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_tf02eii8ud3er4chm9v85jea3p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 16,
+      "title": "Chainsaw Man #17",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ah1fjqhb1d60teldor332sde0v/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 17,
+      "title": "Chainsaw Man #18",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_5bqemr3g0d0tf2cakp8fffvq35/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 18,
+      "title": "Chainsaw Man #19",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_fk88q7oc5h3vnapskrghm3ks69/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 19,
+      "title": "Chainsaw Man #20",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_mme77nn3vd3ah3mo6q95u2ft7q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "chainsaw-man",
+      "volume_number": 20,
+      "title": "Chainsaw Man #21",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_3siq87mpdh6sv6tmqqe1beer6c/-S897-f.webp"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 0,
+      "title": "Choujin X #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_npleumh2v91ed7js4f0b0di65s/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 1,
+      "title": "Choujin X #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_biue0m13f90rf1p05gtbjffo0c/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 2,
+      "title": "Choujin X #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_7ghsbaop4d117cvfl6ba5v1v46/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 3,
+      "title": "Choujin X #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_h4m2jphg456d7fsfsn3i6e6q2b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 4,
+      "title": "Choujin X #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_58oa3kr5kh0rtffdkdlg2ej21e/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 5,
+      "title": "Choujin X #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rrss7dmj5h0m72iernmd4vku51/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 6,
+      "title": "Choujin X #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_6a9vro46ct0tb8jq9sjks6f36q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 7,
+      "title": "Choujin X #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_hv7iflndfh5nd9h7dsmj6ag55s/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 8,
+      "title": "Choujin X #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_p2le4vm5117vrdvj4j15cp5q4m/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 9,
+      "title": "Choujin X #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_jf6qpr5c7p65j5fuqknjoe7n2i/-S897-FWEBP"
+    },
+    {
+      "collection_id": "choujin-x",
+      "volume_number": 10,
+      "title": "Choujin X #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_prrrng5glt0lb4gdgngu5mef12/-S897-FWEBP"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 0,
+      "title": "DanDaDan #01",
+      "cover_url": "https://m.media-amazon.com/images/I/81kHWcb7n4L.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 1,
+      "title": "DanDaDan #02",
+      "cover_url": "https://m.media-amazon.com/images/I/819x3NSAh+L.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 2,
+      "title": "DanDaDan #03",
+      "cover_url": "https://m.media-amazon.com/images/I/81CvpLHatTL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 3,
+      "title": "DanDaDan #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_046dqluo395dtf6k6ducpmpp48/-S897-FWEBP"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 4,
+      "title": "DanDaDan #05",
+      "cover_url": "https://m.media-amazon.com/images/I/81kO+u8RJoL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 5,
+      "title": "DanDaDan #06",
+      "cover_url": "https://m.media-amazon.com/images/I/81MMbQXM3CL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 6,
+      "title": "DanDaDan #07",
+      "cover_url": "https://m.media-amazon.com/images/I/81jPgY8ghpL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 7,
+      "title": "DanDaDan #08",
+      "cover_url": "https://m.media-amazon.com/images/I/81XoePWat5L.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 8,
+      "title": "DanDaDan #09",
+      "cover_url": "https://m.media-amazon.com/images/I/81rWnBWSITL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 9,
+      "title": "DanDaDan #10",
+      "cover_url": "https://m.media-amazon.com/images/I/81XZC7jYfKL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 10,
+      "title": "DanDaDan #11",
+      "cover_url": "https://m.media-amazon.com/images/I/71kvhFrRMEL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 11,
+      "title": "DanDaDan #12",
+      "cover_url": "https://m.media-amazon.com/images/I/81eidJZczYL.jpg"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 12,
+      "title": "DanDaDan #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_octatabiit12f5lopj5424j70o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 13,
+      "title": "DanDaDan #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rlvdcqbh9956r5u9i1gohbfn4b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 14,
+      "title": "DanDaDan #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_k4p8n3q2453k3f930eo3926u4f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "dan-da-dan",
+      "volume_number": 15,
+      "title": "DanDaDan #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_42s9aq650530rc8hjm9la39d10/-S897-FWEBP"
+    },
+    {
+      "collection_id": "death-note",
+      "volume_number": 0,
+      "title": "Death Note #1",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/06/dn-black-edition-01.jpg"
+    },
+    {
+      "collection_id": "death-note",
+      "volume_number": 1,
+      "title": "Death Note #2",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/07/dn-black-edition-02.jpg"
+    },
+    {
+      "collection_id": "death-note",
+      "volume_number": 2,
+      "title": "Death Note #3",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/08/dn-black-edition-03-770x1169.jpg"
+    },
+    {
+      "collection_id": "death-note",
+      "volume_number": 3,
+      "title": "Death Note #4",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/10/dn-black-edition-04.jpg"
+    },
+    {
+      "collection_id": "death-note",
+      "volume_number": 4,
+      "title": "Death Note #5",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/11/dn-black-edition-05-770x1169.jpg"
+    },
+    {
+      "collection_id": "death-note",
+      "volume_number": 5,
+      "title": "Death Note #6",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2013/12/dn-black-edition-06-770x1169.jpg"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 0,
+      "title": "Demon Slayer #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kf32gsogi53qj8o3vjbju9s861/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 1,
+      "title": "Demon Slayer #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_m3es1560op04tel7enc419n31n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 2,
+      "title": "Demon Slayer #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_r2jj7dbns55ulfo1tjtsbpun5f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 3,
+      "title": "Demon Slayer #04",
+      "cover_url": "https://m.media-amazon.com/images/I/91ZVONTZJGL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 4,
+      "title": "Demon Slayer #05",
+      "cover_url": "https://m.media-amazon.com/images/I/81LJKM-TooL.jpg"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 5,
+      "title": "Demon Slayer #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2ivm564h9105530qot22deg10h/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 6,
+      "title": "Demon Slayer #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_bgb0a6lgc967n9qu54mj08gd1g/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 7,
+      "title": "Demon Slayer #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_tfcs1mq24d1sjer4n49uld3l54/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 8,
+      "title": "Demon Slayer #09",
+      "cover_url": "https://m.media-amazon.com/images/I/91uyfCksGVL.jpg"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 9,
+      "title": "Demon Slayer #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_dmsp1452mh16bdfq3l1o6btv7k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 10,
+      "title": "Demon Slayer #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_9j80uqn0q57et452h68bvr3p78/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 11,
+      "title": "Demon Slayer #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_k4p9uvi7it633fp16fmfc74h5r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 12,
+      "title": "Demon Slayer #13",
+      "cover_url": "https://m.media-amazon.com/images/I/61QymrslhvL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 13,
+      "title": "Demon Slayer #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_psest0sihh7d3clicbh2tb6r71/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 14,
+      "title": "Demon Slayer #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_0uavgf6f4t13dfql48mh1iup6n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 15,
+      "title": "Demon Slayer #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_fca6cqa29l7s1fos4mogs8j95c/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 16,
+      "title": "Demon Slayer #17",
+      "cover_url": "https://m.media-amazon.com/images/I/716yCO8esmL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 17,
+      "title": "Demon Slayer #18",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_i2b3okrb610nh7pl1de0kj1k6q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 18,
+      "title": "Demon Slayer #19",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b2vemfu11h0thfnnqidf6ue44r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 19,
+      "title": "Demon Slayer #20",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_22numci32d6olai1i0q7o9p30a/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 20,
+      "title": "Demon Slayer #21",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_l9u5ad9qcp18p8rkejlois037p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 21,
+      "title": "Demon Slayer #22",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_pgpbjaiued7uh6t15t71tkhe18/-S897-FWEBP"
+    },
+    {
+      "collection_id": "demon-slayer",
+      "volume_number": 22,
+      "title": "Demon Slayer #23",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_0tt1v9svmp3n99p7r30q0t9h59/-S897-FWEBP"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 0,
+      "title": "Evangelion #1",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2022/10/neon-genesis-evangelion-collectors-edition-01-capa.jpg"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 1,
+      "title": "Evangelion #2",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2023/03/evangelion-02-capa.jpg"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 2,
+      "title": "Evangelion #3",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2023/10/evangelion-03-sobrecapa.jpg"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 3,
+      "title": "Evangelion #4",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2024/02/evangelion-04-sobrecapa.jpg"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 4,
+      "title": "Evangelion #5",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2024/08/evangelion-05-capa.jpg"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 5,
+      "title": "Evangelion #6",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2024/10/evangelion-06-capa.jpg"
+    },
+    {
+      "collection_id": "evangelion",
+      "volume_number": 6,
+      "title": "Evangelion #7",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2025/01/evangelion-07-capa.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 0,
+      "title": "Fire Punch #1",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/06/Fire-Punch-01-Capa.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 1,
+      "title": "Fire Punch #2",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/07/Fire-Punch-02-Capa_p.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 2,
+      "title": "Fire Punch #3",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/08/Fire-Punch-03-Capa_p.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 3,
+      "title": "Fire Punch #4",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/08/Fire-Punch-04-Capa_p.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 4,
+      "title": "Fire Punch #5",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/10/Fire-Punch-05-Capa_p.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 5,
+      "title": "Fire Punch #6",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2019/10/Fire-Punch-06-Capa_p.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 6,
+      "title": "Fire Punch #7",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2020/03/Fire_Punch_07_Capa-770x1167.jpg"
+    },
+    {
+      "collection_id": "fire-punch",
+      "volume_number": 7,
+      "title": "Fire Punch #8",
+      "cover_url": "https://www.jbchost.com.br/editorajbc/wp-content/uploads/2020/03/Fire_Punch_08_Capa-scaled.jpg"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 0,
+      "title": "Frieren #0",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kblh3ff2kp6afdr1i8cis0b430/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 1,
+      "title": "Frieren #0",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_c6fmvgmmlp47f1ofp76a85kb71/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 2,
+      "title": "Frieren #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_g9t6981dcd7an8vtlp79efoq0b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 3,
+      "title": "Frieren #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_btooil23d15st2vi971ptcui6g/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 4,
+      "title": "Frieren #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_3no7kovchd1sd5uiv8bdrf7m40/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 5,
+      "title": "Frieren #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b236kh3j7p0ff4g0auvkbbd42v/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 6,
+      "title": "Frieren #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_siqjef7l6964l71ae889po1b4a/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 7,
+      "title": "Frieren #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_v5srunl3q532782nma8rirbg4p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 8,
+      "title": "Frieren #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_5t6jqori550utfja7qqqple818/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 9,
+      "title": "Frieren #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_5n5qek7a8l5ujbpuk0h2lqht12/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 10,
+      "title": "Frieren #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_pa01pm11tp2vj44u5bbc25e079/-S897-FWEBP"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 11,
+      "title": "Frieren #12",
+      "cover_url": "https://cdn.awsli.com.br/800x800/2054/2054144/produto/357086191/91rfuqkktpl-_sl1500_-vhn98xrg5n.jpg"
+    },
+    {
+      "collection_id": "frieren-e-a-jornada-para-o-alem",
+      "volume_number": 12,
+      "title": "Frieren #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_e7ir0ce1e142p7lcnl2l69t86h/-S897-FWEBP"
+    },
+    {
+      "collection_id": "historias-curtas-de-tatsuki-fujimoto",
+      "volume_number": 0,
+      "title": "17-21",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rbdorbdjth2sj4ovpeidp4pd3j/-S897-FWEBP"
+    },
+    {
+      "collection_id": "historias-curtas-de-tatsuki-fujimoto",
+      "volume_number": 1,
+      "title": "22-26",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_8aupgahtv54k9fak9pmpajrg2o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 0,
+      "title": "Initial D #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_cbs4rq1jup0uv1024daqgki729/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 1,
+      "title": "Initial D #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_qj0meh19u96av8d5m9mdnhiq42/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 2,
+      "title": "Initial D #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_7caep8ndlp44ta937pmhcpcn1q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 3,
+      "title": "Initial D #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_nrdk20kfot15pd15mrm4556b2e/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 4,
+      "title": "Initial D #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_c992ooebqt5sn08b0hipjkh352/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 5,
+      "title": "Initial D #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_u22i3dceqt78p143i07kqc3a69/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 6,
+      "title": "Initial D #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_vjh2i12s2p3u1b30958o64s10h/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 7,
+      "title": "Initial D #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_a6d52rs25h6sb8pbmqvh0h2j4h/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 8,
+      "title": "Initial D #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_7h7vh6iu392pd28msip4p0p16u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 9,
+      "title": "Initial D #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_29mmk5ooi52jva61ckpd37hh0p/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 10,
+      "title": "Initial D #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_6ffrjqgi2t18rabvrhcljlna1b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "initial-d",
+      "volume_number": 11,
+      "title": "Initial D #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_i8797vrh1146j02kpm3r41pu4s/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 0,
+      "title": "Jojo's Bizarre Adventure Parte 4 #01",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_796340-MLU77450034699_072024-F.jpg"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 1,
+      "title": "Jojo's Bizarre Adventure Parte 4 #02",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_771426-MLU77445272407_072024-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 2,
+      "title": "Jojo's Bizarre Adventure Parte 4 #03",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_869805-MLU77450196063_072024-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 3,
+      "title": "Jojo's Bizarre Adventure Parte 4 #04",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_924865-MLU50423196985_062022-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 4,
+      "title": "Jojo's Bizarre Adventure Parte 4 #05",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_973077-MLU50423575011_062022-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 5,
+      "title": "Jojo's Bizarre Adventure Parte 4 #06",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_711064-MLU50423831328_062022-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 6,
+      "title": "Jojo's Bizarre Adventure Parte 4 #07",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_897253-MLU77450528903_072024-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 7,
+      "title": "Jojo's Bizarre Adventure Parte 4 #08",
+      "cover_url": "https://m.media-amazon.com/images/I/51giU4DvmvL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 8,
+      "title": "Jojo's Bizarre Adventure Parte 4 #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_06qe0n6mk93ene0msp86ig2c6f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 9,
+      "title": "Jojo's Bizarre Adventure Parte 4 #10",
+      "cover_url": "https://drive.google.com/thumbnail?id=1WO23h3G37_mhgdte81m-iJLMz0OLlCLx&sz=s800"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 10,
+      "title": "Jojo's Bizarre Adventure Parte 4 #11",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_896732-MLU69417772471_052023-O.webp"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-4",
+      "volume_number": 11,
+      "title": "Jojo's Bizarre Adventure Parte 4 #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_da9m262sa17990jtu1cscgf83b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 0,
+      "title": "Jojo's Bizarre Adventure Parte 5 #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ii6fc7pf4d2nbbq9ppj628gb0k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 1,
+      "title": "Jojo's Bizarre Adventure Parte 5 #02",
+      "cover_url": "https://drive.google.com/thumbnail?id=1ecMfIUZJQjKgJXEPTfO6-BziRtbloZNK&sz=s800"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 2,
+      "title": "Jojo's Bizarre Adventure Parte 5 #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_s5b52piv61613aiostoq1js653/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 3,
+      "title": "Jojo's Bizarre Adventure Parte 5 #04",
+      "cover_url": "https://drive.google.com/thumbnail?id=14W5qkT4JduX3vakWVQWJ0Rkgk1N6VfVl&sz=s800"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 4,
+      "title": "Jojo's Bizarre Adventure Parte 5 #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_7u52mh72gd6ehb4kar3vml6l01/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 5,
+      "title": "Jojo's Bizarre Adventure Parte 5 #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ou7jqicfnl0tbc1lc1t3lsb243/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 6,
+      "title": "Jojo's Bizarre Adventure Parte 5 #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rgu5kskj9l56f64vj8f90pja6i/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 7,
+      "title": "Jojo's Bizarre Adventure Parte 5 #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_crmgjfa3917ar2in8bokfgkv4t/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 8,
+      "title": "Jojo's Bizarre Adventure Parte 5 #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_9tqnpmoavd3t1d0736otlph715/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-5",
+      "volume_number": 9,
+      "title": "Jojo's Bizarre Adventure Parte 5 #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_oqhbvnqh6p77h5l1v5d7a3c61b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 0,
+      "title": "Jojo's Bizarre Adventure Parte 6 #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_1orr5ddasp4grabv2adre89i58/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 1,
+      "title": "Jojo's Bizarre Adventure Parte 6 #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_skrfdnr87h5dfenr523v58fp6g/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 2,
+      "title": "Jojo's Bizarre Adventure Parte 6 #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ehqk21pcoh3ahe3g2962737t3q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 3,
+      "title": "Jojo's Bizarre Adventure Parte 6 #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_cr858vtapp3bt04jj3aobmhr3a/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 4,
+      "title": "Jojo's Bizarre Adventure Parte 6 #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_bohrlk7o1d00n6fjcdu4ctt82f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 5,
+      "title": "Jojo's Bizarre Adventure Parte 6 #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_8cjqet4cah41503e0b8ttfau3d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 6,
+      "title": "Jojo's Bizarre Adventure Parte 6 #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b7hr4fjut539r926peamqgq81n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 7,
+      "title": "Jojo's Bizarre Adventure Parte 6 #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_6552vgo2o912tcpdte21rf4q39/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 8,
+      "title": "Jojo's Bizarre Adventure Parte 6 #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_445ftcat4530h43uhg9bju7j1a/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 9,
+      "title": "Jojo's Bizarre Adventure Parte 6 #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ainft4lu3508d94rait1s1315g/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-6",
+      "volume_number": 10,
+      "title": "Jojo's Bizarre Adventure Parte 6 #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_81s3gvemc96ob8vl95vhoqqa05/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-7",
+      "volume_number": 0,
+      "title": "Jojo's Bizarre Adventure Parte 7 #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_eum54k29ot2t59q5mcgrrcgl75/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-7",
+      "volume_number": 1,
+      "title": "Jojo's Bizarre Adventure Parte 7 #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_3trng7lgtp1hndkst7dolauq3b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-7",
+      "volume_number": 2,
+      "title": "Jojo's Bizarre Adventure Parte 7 #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_27rk2v72m53jh8c70v9rdejf11/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-7",
+      "volume_number": 3,
+      "title": "Jojo's Bizarre Adventure Parte 7 #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_n737v3nl9508b16kmnvufh1s4n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-7",
+      "volume_number": 4,
+      "title": "Jojo's Bizarre Adventure Parte 7 #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_e0cu60ob057ib084cj2ceucl4v/-S897-FWEBP"
+    },
+    {
+      "collection_id": "jojo-s-bizarre-adventure-parte-7",
+      "volume_number": 5,
+      "title": "Jojo's Bizarre Adventure Parte 7 #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_i4kfn79e2t3218uhilf02qqa3n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "madoka-magica",
+      "volume_number": 0,
+      "title": "Madoka #1",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2020/03/NewPOP_Madoka01.jpg"
+    },
+    {
+      "collection_id": "madoka-magica",
+      "volume_number": 1,
+      "title": "Madoka #2",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2020/03/NewPOP_Madoka02.jpg"
+    },
+    {
+      "collection_id": "madoka-magica",
+      "volume_number": 2,
+      "title": "Madoka #3",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2020/03/NewPOP_Madoka03.jpg"
+    },
+    {
+      "collection_id": "madoka-magica-homura-s-revenge",
+      "volume_number": 0,
+      "title": "Homuras revenge #1",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2022/02/NewPOP_HomuraRevenge01.jpg"
+    },
+    {
+      "collection_id": "madoka-magica-homura-s-revenge",
+      "volume_number": 1,
+      "title": "Homuras revenge #2",
+      "cover_url": "https://www.newpop.com.br/wp-content/uploads/2022/02/NewPOP_HomuraRevenge02.jpg"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 0,
+      "title": "Minha Adorável Cosplayer #0",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_j1rpvvl58h6g56akfkjlcl7m70/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 1,
+      "title": "Minha Adorável Cosplayer #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_f7tajh9pc53kh1jdoquof44e52/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 2,
+      "title": "Minha Adorável Cosplayer #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_82oiif43u11ln9aribh2us5u1a/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 3,
+      "title": "Minha Adorável Cosplayer #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_pj6gfb74a139519gej842t2d1u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 4,
+      "title": "Minha Adorável Cosplayer #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_c8bgant1i94mjd7ofun6lcnc4q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 5,
+      "title": "Minha Adorável Cosplayer #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_679pd55jkp6kddpi0q3hsrvj5r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 6,
+      "title": "Minha Adorável Cosplayer #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_52f8nv52gt5or5tln1t1kgti0r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 7,
+      "title": "Minha Adorável Cosplayer #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_6np3sejn615vl8f21jhpnl033b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 8,
+      "title": "Minha Adorável Cosplayer #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_m21isbbqkh33jfn5ag31rkpi3c/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 9,
+      "title": "Minha Adorável Cosplayer #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_cn912g64ed7cn43keah9fkrv0q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 10,
+      "title": "Minha Adorável Cosplayer #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_8046ifq81l4u5d6ps4vlqmk342/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 11,
+      "title": "Minha Adorável Cosplayer #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_jrh4ili5fh57bajbkgdafkaf0j/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 12,
+      "title": "Minha Adorável Cosplayer #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_j1c1sfgaj93k31jp2fhbid3g5e/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-adoravel-cosplayer",
+      "volume_number": 13,
+      "title": "Minha Adorável Cosplayer #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_bccraic3th5gvd7eslna8m4j2q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 0,
+      "title": "Minha Estrela Preferida #0",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_3p6cvssu1h4u5f3iud66sp470d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 1,
+      "title": "Minha Estrela Preferida #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kl6fbpjfpp2ol05lusvd9fsh5b/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 2,
+      "title": "Minha Estrela Preferida #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_drdm861k3p537d5c9seotol20q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 3,
+      "title": "Minha Estrela Preferida #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_3hls06ek653c79pet5ljg94q07/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 4,
+      "title": "Minha Estrela Preferida #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_m5fddkqr395njel8abt1423360/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 5,
+      "title": "Minha Estrela Preferida #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_h3hdnli4cl6un7q4pomnbi5i4u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 6,
+      "title": "Minha Estrela Preferida #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_80ie3ufb351ff20m7cn0e7ki03/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 7,
+      "title": "Minha Estrela Preferida #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_u8jc2p1nap351aculldj3kvg76/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 8,
+      "title": "Minha Estrela Preferida #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ujv5qmuh1t6gd0njugtespej72/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 9,
+      "title": "Minha Estrela Preferida #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_u31qmmfgb915l7edv07e6h0a64/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 10,
+      "title": "Minha Estrela Preferida #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2b8e6k0v7p3e3felorjl4ku40q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 11,
+      "title": "Minha Estrela Preferida #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_d1f35pafth67n629t843vl9d49/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 12,
+      "title": "Minha Estrela Preferida #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_enhkp1l5sp0u15fb8mk70o9l37/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 13,
+      "title": "Minha Estrela Preferida #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_rub7hs9p7l5ila8ud6jv59hc6t/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 14,
+      "title": "Minha Estrela Preferida #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_i9k2lrl3oh60jcmutpv09ge20u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "minha-estrela-preferida",
+      "volume_number": 15,
+      "title": "Minha Estrela Preferida #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_baku25fau914vf7ot1rh9rla6n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 0,
+      "title": "Monster #1",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_bclqnsos3p59d6v9kdhm817s60/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 1,
+      "title": "Monster #2",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_8vaj0b9mut4tra5o7mnn690v23/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 2,
+      "title": "Monster #3",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_nq0rpi1hi55490b0gl51eg0h7v/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 3,
+      "title": "Monster #4",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_v99cht3orh1rf6i3quvpqccd3n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 4,
+      "title": "Monster #5",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_p7kv71b9o924r3uinp5lq3ge62/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 5,
+      "title": "Monster #6",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ao2l4db2nd0s790f5b6n5fdu6j/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 6,
+      "title": "Monster #7",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_kt6329ur053vla2vb6hhhd030d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 7,
+      "title": "Monster #8",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ek52bg9k9d16bf75gu7sere075/-S897-FWEBP"
+    },
+    {
+      "collection_id": "monster",
+      "volume_number": 8,
+      "title": "Monster #9",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_296vao4nhd09h4oufk6lv9m23l/-S897-FWEBP"
+    },
+    {
+      "collection_id": "o-cara-que-estou-a-fim-nao-e-um-cara",
+      "volume_number": 0,
+      "title": "O Cara que Estou a Fim Não é um Cara?! #01",
+      "cover_url": "https://cdn.awsli.com.br/800x800/54/54752/produto/276489803/9788583625483-lha0f2ignd.jpg"
+    },
+    {
+      "collection_id": "o-cara-que-estou-a-fim-nao-e-um-cara",
+      "volume_number": 1,
+      "title": "O Cara que Estou a Fim Não é um Cara?! #02",
+      "cover_url": "https://cdn.awsli.com.br/2500x2500/54/54752/produto/354585737/o-cara-0h27tkifo6.jpg"
+    },
+    {
+      "collection_id": "o-pecado-original-de-takopi",
+      "volume_number": 0,
+      "title": "Takopi #1",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_obrijh58n13tp4b1dvd3pdbj3d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "o-pecado-original-de-takopi",
+      "volume_number": 1,
+      "title": "Takopi #2",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_nr1o4773vt36nd9c3sp7d5uu02/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 0,
+      "title": "The Promised Neverland #0",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_9ochme5v2t44jdjnuivg3ste6k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 1,
+      "title": "The Promised Neverland #02",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_938253-MLU50451545239_062022-O.webp"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 2,
+      "title": "The Promised Neverland #03",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_943318-MLU50451544237_062022-O.webp"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 3,
+      "title": "The Promised Neverland #04",
+      "cover_url": "https://storage.geralgeek.com.br/images/venda/Panini-66606ebd7dfee.png"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 4,
+      "title": "The Promised Neverland #05",
+      "cover_url": "https://m.media-amazon.com/images/I/81RzGR06t+L._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 5,
+      "title": "The Promised Neverland #06",
+      "cover_url": "https://m.media-amazon.com/images/I/91m0S6Bd5aL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 6,
+      "title": "The Promised Neverland #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_m48uks8nl17ft79ql70v3epv5k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 7,
+      "title": "The Promised Neverland #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_d8pbossaol0uhffnc4aajpm573/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 8,
+      "title": "The Promised Neverland #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ug7n5nqomd627avup813bk7504/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 9,
+      "title": "The Promised Neverland #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_su6j3b4pqp6ov3q8aku9u1j259/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 10,
+      "title": "The Promised Neverland #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_s3mck52igl13v3o4a5a9k2lj24/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 11,
+      "title": "The Promised Neverland #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_q40r05cg757gpbe7ckoutlf00n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 12,
+      "title": "The Promised Neverland #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_4b36o66jd14dr7thn320khh40a/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 13,
+      "title": "The Promised Neverland #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_r3dhd6t0u10av8js2po2du2l0e/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 14,
+      "title": "The Promised Neverland #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_1bop29k4952gjflen6le2m4m2r/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 15,
+      "title": "The Promised Neverland #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_tidb2im1o96cl4onlb15dk621s/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 16,
+      "title": "The Promised Neverland #17",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ab66e5nj0h0nrbr9ueukkb8552/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 17,
+      "title": "The Promised Neverland #18",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_djb59cf7sp4spejekpa589kv5g/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 18,
+      "title": "The Promised Neverland #19",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_uicav3auet07h061t5u5q8pk7u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "the-promised-neverland",
+      "volume_number": 19,
+      "title": "The Promised Neverland #20",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_6bhvugrt1l5s338ho2pppcuh40/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 0,
+      "title": "Tokyo Ghoul #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b0j1o6bno11h363l7m26r2tn2f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 1,
+      "title": "Tokyo Ghoul #02",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_ko4822q26l4ptedgilc7drdg0n/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 2,
+      "title": "Tokyo Ghoul #03",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_781tsnjt6p2rd1ktirqr22s82q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 3,
+      "title": "Tokyo Ghoul #04",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_oiderrbk4d27r87oulfmqtnu31/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 4,
+      "title": "Tokyo Ghoul #05",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_v974brqdgl6jp8nc5cdglbtr4o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 5,
+      "title": "Tokyo Ghoul #06",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_5dcpkqiqbt4ed85a2mcmvupm7j/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 6,
+      "title": "Tokyo Ghoul #07",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_lredlm8agd3el0tqrtgdpv9n6u/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 7,
+      "title": "Tokyo Ghoul #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_p4h3t68he967rebpa7a8irke4h/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 8,
+      "title": "Tokyo Ghoul #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_b0g6i8rgl54b960u3ondujcv35/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 9,
+      "title": "Tokyo Ghoul #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_p2r7metflh4lnf6mf5vj0a1d55/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 10,
+      "title": "Tokyo Ghoul #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_18t3t5ds9t1gb7tut9dk0r822q/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 11,
+      "title": "Tokyo Ghoul #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_j9askfa28l6mh1rmadkb340a2j/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 12,
+      "title": "Tokyo Ghoul #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_nmurtkcret52h4ro9hd5j68n6f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul",
+      "volume_number": 13,
+      "title": "Tokyo Ghoul #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_2eof8jmjol1gp6503o4srkok4h/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 0,
+      "title": "Tokyo Ghoul: re #01",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_g1g9pp9bp50i1e93lbsft6rv7t/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 1,
+      "title": "Tokyo Ghoul: re #02",
+      "cover_url": "https://m.media-amazon.com/images/I/81JYJGzTsBL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 2,
+      "title": "Tokyo Ghoul: re #03",
+      "cover_url": "https://m.media-amazon.com/images/I/71vyjfvB9WL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 3,
+      "title": "Tokyo Ghoul: re #04",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_868337-MLU50423326066_062022-O.webp"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 4,
+      "title": "Tokyo Ghoul: re #05",
+      "cover_url": "https://m.media-amazon.com/images/I/81WwrK5kuYL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 5,
+      "title": "Tokyo Ghoul: re #06",
+      "cover_url": "https://m.media-amazon.com/images/I/81RCqRal9XL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 6,
+      "title": "Tokyo Ghoul: re #07",
+      "cover_url": "https://http2.mlstatic.com/D_NQ_NP_601583-MLU50449980765_062022-O.webp"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 7,
+      "title": "Tokyo Ghoul: re #08",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_11e0ur6q790ah745c9nifqo30l/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 8,
+      "title": "Tokyo Ghoul: re #09",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_v26m8a5bot2ml3m0tbi5end31f/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 9,
+      "title": "Tokyo Ghoul: re #10",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_q68mvma1v50ub0p99dmjg0iq3k/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 10,
+      "title": "Tokyo Ghoul: re #11",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_el72r8lgh9717alnjv7j1ksa3d/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 11,
+      "title": "Tokyo Ghoul: re #12",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_nneb9rm8f930ffu82vbji2g31t/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 12,
+      "title": "Tokyo Ghoul: re #13",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_m25rul71n13rb6i1bjbqlqhn3v/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 13,
+      "title": "Tokyo Ghoul: re #14",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_4c635726ih01dd7l4stvjop50o/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 14,
+      "title": "Tokyo Ghoul: re #15",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_j0gn2af4ut5oja0huqnbnnuc2c/-S897-FWEBP"
+    },
+    {
+      "collection_id": "tokyo-ghoul-re",
+      "volume_number": 15,
+      "title": "Tokyo Ghoul: re #16",
+      "cover_url": "https://d14d9vp3wdof84.cloudfront.net/image/589816272436/image_crngm6sfvp18t177ji767o1m41/-S897-FWEBP"
+    }
+  ]
+}
